@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "xmemory": "cpp"
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "cstdlib": "cpp"
     }
 }

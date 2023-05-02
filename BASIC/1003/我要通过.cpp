@@ -8,11 +8,19 @@ void iscorrect(string str)
     tag[0]=false;
     for(int i=0;i<str.length();i++)
     {
-         if(str[i]=='P'&&i<str.length()-2)
+         if(str[i]=='P'&&i<str.length()-3)
+        {
+            if(str[i+1]=='A'&&str[i+2]=='A'&&str[i+3]=='T')
+            tag[0]=true;
+            i+=3;
+            
+        }else
+        if(str[i]=='P'&&i<str.length()-2)
         {
             if(str[i+1]=='A'&&str[i+2]=='T')
             tag[0]=true;
             i+=2;
+            
         }
         else if(str[i]=='A'||str[i]==' ')
         {
